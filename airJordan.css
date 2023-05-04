@@ -1,47 +1,67 @@
-*{  
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-
+body {
+  margin: 0;
 }
 
 main {
-    display: flex;
-    overflow-x: hidden;
+  display: flex;
+  overflow-x: hidden;
 }
 
-.back{
-    width: 100vw;
-    background-image: url(jordan.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+.back {
+  width: 100vw;
+  background-image: url(jordan.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.outer_logo{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(125, 125, 125, 0.5);
-
+.outer_logo {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(125, 125, 125, 0.5);
 }
 
-#logo{
-
-    height: 100vh;
-    position: relative;
+#logo {
+  height: 100vh;
+  position: relative;
+}
+.mainText {
+  background-color: rgba(125, 125, 125, 0.5);
 }
 
-.mainText{
-    background-color: rgba(125, 125, 125, 0.5);
+.mainText h1 {
+  font-size: 6em;
+  width: 250px;
 
+  margin-left: 400px;
+  animation: slide 2s ease-out;
 }
 
+@keyframes slide {
+  from {
+    left: -100px;
+    opacity: 0;
+  }
+  to {
+    left: 400px;
+    opacity: 1;
+  }
+}
 
-
-
-
+@keyframes disappear {
+  from {
+    left: 400px;
+    opacity: 1;
+  }
+  to {
+    left: -100px;
+    opacity: 0;
+  }
+}
